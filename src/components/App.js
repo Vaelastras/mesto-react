@@ -4,11 +4,37 @@ import Main from "./Main";
 import Footer from "./Footer";
 
 function App() {
+
+    const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
+    const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
+    const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
+
+    function handleEditAvatarClick () {
+        isEditAvatarPopupOpen(true)
+    }
+
+    function handleEditProfileClick() {
+        isEditProfilePopupOpen(true)
+    }
+
+    function handleAddPlaceClick() {
+        isAddPlacePopupOpen(true)
+    }
+    function closeAllPopups() {
+        setIsEditAvatarPopupOpen(false);
+        setIsEditProfilePopupOpen(false);
+        setIsAddPlacePopupOpen(false);
+    }
+
   return (
       <body className="page">
         <div className="root">
             <Header />
-            <Main/>
+            <Main
+                onEditAvatar={handleEditAvatarClick}
+                onEditProfile={handleEditProfileClick}
+                onAddPlace ={handleAddPlaceClick}
+            />
             <Footer />
             {/*start template*/}
             <template id="template">
@@ -86,13 +112,7 @@ function App() {
                         <button className="popup__submit" type="submit">Создать</button>
                     </form>
                 </div>
-                <div className="popup popup_type_image">
-                    <div className="popup__image-container">
-                        <button className="popup__close" type="reset" aria-label="Закрыть" />
-                        <img className="popup__image" src="#" alt="" />
-                            <p className="popup__image-title"></p>
-                    </div>
-                </div>
+
 
                 <div className="popup popup_type_avatar">
                     <form className="popup__container popup__container_type_avatar" name="popup-avatar" method="GET"
