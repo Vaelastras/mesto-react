@@ -3,12 +3,14 @@ import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import PopupWithForm from "./PopupWIthForm";
+import ImagePopup from "./ImagePopup";
 
 function App() {
 
     const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
     const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
+    const [selectedCard, setSelectedCard] = React.useState(false);
 
     function handleEditAvatarClick ()  {
       setIsEditAvatarPopupOpen(true)
@@ -25,6 +27,11 @@ function App() {
         setIsEditAvatarPopupOpen(false);
         setIsEditProfilePopupOpen(false);
         setIsAddPlacePopupOpen(false);
+         setSelectedCard(false)
+    }
+
+    function handleCardClick(card) {
+      setSelectedCard(card)
     }
 
   return (
@@ -35,6 +42,7 @@ function App() {
             onEditAvatar={handleEditAvatarClick}
             onEditProfile={handleEditProfileClick}
             onAddPlace ={handleAddPlaceClick}
+            onCardClick={handleCardClick}
           />
           <Footer />
 
@@ -98,22 +106,7 @@ function App() {
             </fieldset>
           } />
           <PopupWithForm title="Вы уверены?" name="confirm" submitTitle="Да" />
-
-            {/*start template*/}
-            <template id="template">
-                <div className="element">
-                    <img className="element__photo" src="#" alt="" />
-                        <button className="element__trash" type="button" aria-label="Удалить"></button>
-                        <div className="element__row">
-                            <h2 className="element__title"></h2>
-                            <div className="element__like-section">
-                                <button className="element__like" type="button" aria-label="поставить 'лайк'"></button>
-                                <span className="element__like-counter">0</span>
-                            </div>
-                        </div>
-                </div>
-            </template>
-            {/*end template*/}
+          <ImagePopup card={selectedCard} isClose={closeAllPopups} />
         </div>
       </div>
   );
