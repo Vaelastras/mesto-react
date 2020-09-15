@@ -26,11 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b66f6a1-57a8-452b-9816-9fd7642ae050" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ImagePopup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PopupWIthForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImagePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImagePopup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWIthForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWIthForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600073947350</updated>
       <workItem from="1600073948570" duration="720000" />
-      <workItem from="1600101214121" duration="7802000" />
+      <workItem from="1600101214121" duration="13709000" />
     </task>
     <servers />
   </component>
@@ -222,9 +221,11 @@
     </state>
     <state width="1899" height="339" key="GridCell.Tab.3.right/0.23.1440.877/1440.23.1920.1011@1440.23.1920.1011" timestamp="1600103595569" />
     <state width="1659" height="327" key="GridCell.Tab.3.right/0.23.1680.981@0.23.1680.981" timestamp="1600157873862" />
-    <state x="341" y="152" key="SettingsEditor" timestamp="1600157768028">
-      <screen x="0" y="23" width="1680" height="981" />
+    <state x="2168" y="194" key="SettingsEditor" timestamp="1600176119445">
+      <screen x="1440" y="23" width="1920" height="1011" />
     </state>
+    <state x="2168" y="202" key="SettingsEditor/0.23.1440.831/1440.23.1920.1057@1440.23.1920.1057" timestamp="1600170599891" />
+    <state x="2168" y="194" key="SettingsEditor/0.23.1440.877/1440.23.1920.1011@1440.23.1920.1011" timestamp="1600176119445" />
     <state x="341" y="152" key="SettingsEditor/0.23.1680.981@0.23.1680.981" timestamp="1600157768028" />
     <state x="505" y="239" width="670" height="676" key="search.everywhere.popup" timestamp="1600158229453">
       <screen x="0" y="23" width="1680" height="981" />
