@@ -20,7 +20,7 @@ function Main(props) {
 
             <section className="profile">
                 <div className="profile__image">
-                    <img className="profile__avatar" alt={''} style={{ backgroundImage: `url(${userInfo.avatar})` }}/>
+                    <div className="profile__avatar" alt={''} style={{ backgroundImage: `url(${userInfo.avatar})` }}/>
                     <button className='profile__edit-avatar' type="button" aria-label="Редактировать аватар" onClick={props.onEditAvatar} />
                 </div>
 
@@ -35,8 +35,13 @@ function Main(props) {
             </section>
 
             <section className="elements" aria-label="элементы">
-              {cards.map((item, index) => <Card key={index} card={item} onCardClick={props.onCardClick} /> )}
-              }}
+              {cards.map((item, index) => 
+                <Card 
+                  key={index} 
+                  card={item} 
+                  onCardClick={props.onCardClick} 
+                />
+              )}
             </section>
         </main>
     )

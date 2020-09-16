@@ -5,14 +5,15 @@ import Footer from "./Footer";
 import PopupWithForm from "./PopupWIthForm";
 import ImagePopup from "./ImagePopup";
 
-function App() {
+function App () {
 
+    // const container = document.querySelector('.popup__image-container')
     const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
     const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
     const [selectedCard, setSelectedCard] = React.useState('');
 
-    function handleEditAvatarClick ()  {
+    function handleEditAvatarClick () {
       setIsEditAvatarPopupOpen(true);
     }
 
@@ -32,20 +33,9 @@ function App() {
     }
 
     function handleCardClick(card) {
-      setSelectedCard(card)
+      setSelectedCard(card); 
     }
 
-
-
-   // какая-то непонятная ерунда с крестом по центру попапа, Могу убрать его один раз с всех попапов, при возврате в отрисоку идет какая то шляпа;
-    // React.useEffect(() => {
-    //   Array.from(document.querySelectorAll('.popup__close')).forEach(((elem) => {
-    //     elem.style.display = 'none'
-    //   }))
-    //       return (
-    //     Array.from(document.querySelectorAll('.popup__close')).forEach(((elem) => {elem.style.display ='block'}))
-    //   );
-    // }, [])
   return (
     <div className="page">
       <div className="root">
@@ -75,7 +65,8 @@ function App() {
               minLength="2"
               maxLength="40"
               pattern="[a-zA-Zа-яёА-ЯЁ\s-]*"
-              required />
+              required 
+            />
             <span className="popup__error" id="name-input-error"/>
             <input
               className="popup__input popup__input_type_job"
@@ -85,7 +76,8 @@ function App() {
               placeholder="Введите профессию"
               minLength="2"
               maxLength="200"
-              required />
+              required 
+            />
             <span className="popup__error" id="about-input-error"/>
           </fieldset>
         </PopupWithForm>
@@ -106,7 +98,8 @@ function App() {
               placeholder="Название"
               minLength="1"
               maxLength="30"
-              required />
+              required 
+            />
             <span className="popup__error" id="title-input-error" />
             <input
               className="popup__input popup__input_type_url"
@@ -114,7 +107,8 @@ function App() {
               name="url"
               id="url-input"
               placeholder="Ссылка на картинку"
-              required />
+              required 
+            />
             <span className="popup__error" id="url-input-error"/>
           </fieldset>
         </PopupWithForm>
@@ -133,7 +127,8 @@ function App() {
               name="avatar"
               id="url-input-avatar"
               placeholder="Ссылка на аватар"
-              required />
+              required 
+            />
             <span className="popup__error" id="url-input-avatar-error" />
           </fieldset>
         </PopupWithForm>
@@ -146,6 +141,7 @@ function App() {
         <ImagePopup
           card={selectedCard}
           isClose={closeAllPopups}
+          
         />
       </div>
     </div>
