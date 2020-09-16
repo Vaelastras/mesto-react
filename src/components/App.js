@@ -23,6 +23,7 @@ function App() {
     function handleAddPlaceClick() {
         setIsAddPlacePopupOpen(true)
     }
+
     function closeAllPopups() {
         setIsEditAvatarPopupOpen(false);
         setIsEditProfilePopupOpen(false);
