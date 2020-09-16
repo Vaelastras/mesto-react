@@ -45,7 +45,6 @@ function App() {
     //     Array.from(document.querySelectorAll('.popup__close')).forEach(((elem) => {elem.style.display ='block'}))
     //   );
     // }, [])
-
   return (
     <div className="page">
       <div className="root">
