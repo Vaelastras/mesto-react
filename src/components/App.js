@@ -33,14 +33,13 @@ function App () {
 
   React.useEffect(()=> {
     document.addEventListener('keydown', handleEscapeClose)
-    document.addEventListener("mousedown", handleOverlayClose )
+    document.addEventListener("mousedown", handleOverlayClose)
 
     return () =>{
       document.removeEventListener('keydown', handleEscapeClose)
       document.removeEventListener("mousedown", handleOverlayClose )
     }
   })
-
 
   // close handlers
 

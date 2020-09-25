@@ -5,21 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b66f6a1-57a8-452b-9816-9fd7642ae050" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddPlacePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddPlacePopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditProfilePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditProfilePopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Архив.zip" beforeDir="false" />
-    </list>
+    <list default="true" id="7b66f6a1-57a8-452b-9816-9fd7642ae050" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600073947350</updated>
       <workItem from="1600073948570" duration="720000" />
-      <workItem from="1600946120140" duration="40280000" />
+      <workItem from="1600946120140" duration="40501000" />
     </task>
     <servers />
   </component>
