@@ -3,24 +3,13 @@ import PopupWithForm from "./PopupWithForm";
 
 function AddPlacePopup ({isOpen, onClose, onAddPlace}) {
 
-  // const [title, setTitle] = React.useState('')
-  // const [link, setLink] = React.useState('')
-  let titleRef = React.useRef('')
-  let linkRef = React.useRef('')
-  //
-  // React.useEffect((evt) => {
-  //   titleRef.current.value = evt.target.value;
-  //   linkRef = '';
-  // },[isOpen])
+  const titleRef = React.useRef('')
+  const linkRef = React.useRef('')
 
-
-  function handleTitleType(evt) {
-    titleRef.current.name = evt.target.value;
-  }
-
-  function handleLinkType(evt) {
-    linkRef.current.link = evt.target.value;
-  }
+  React.useEffect(() => {
+    titleRef.current.value = '';
+    linkRef.current.value = '';
+  },[isOpen])
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -37,16 +26,14 @@ function AddPlacePopup ({isOpen, onClose, onAddPlace}) {
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
-      submitTitle={'Создать'} >
+      submitTitle={'Создать'}>
 
       <fieldset className="popup__inputs">
         <input
           ref={titleRef}
-          onChange={handleTitleType}
           className="popup__input popup__input_type_title"
           type="text"
           name="title"
-          defaultValue=""
           id="title-input"
           placeholder="Название"
           minLength="1"
@@ -56,11 +43,9 @@ function AddPlacePopup ({isOpen, onClose, onAddPlace}) {
         <span className="popup__error" id="title-input-error" />
         <input
           ref={linkRef}
-          onChange={handleLinkType}
           className="popup__input popup__input_type_url"
           type="url"
           name="url"
-          defaultValue=""
           id="url-input"
           placeholder="Ссылка на картинку"
           required

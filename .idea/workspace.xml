@@ -6,22 +6,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b66f6a1-57a8-452b-9816-9fd7642ae050" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddPlacePopup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EditProfilePopup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/CurrentUserContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/element/__like/_active/element__like_active.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__like/_active/element__like_type_active.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/element/__like/element__like.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__like/element__like.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/element/__trash/element__trash.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__trash/element__trash.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/element.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddPlacePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddPlacePopup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditProfilePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditProfilePopup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWIthForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Архив.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600073947350</updated>
       <workItem from="1600073948570" duration="720000" />
-      <workItem from="1600946120140" duration="31759000" />
+      <workItem from="1600946120140" duration="40280000" />
     </task>
     <servers />
   </component>
@@ -94,6 +91,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="578" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601040077243">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="578" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.981@0.23.1680.981" timestamp="1601040077243" />
     <state width="1659" height="265" key="GridCell.Tab.0.bottom" timestamp="1600258955875">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -158,11 +159,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1659" height="326" key="GridCell.Tab.3.right/0.23.1440.877/1440.23.1920.1011@0.23.1440.877" timestamp="1600258955383" />
-    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup" timestamp="1600985579268">
+    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup" timestamp="1601039266663">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state x="433" y="206" width="670" height="573" key="search.everywhere.popup/0.23.1440.831/1440.23.1920.1057@0.23.1440.831" timestamp="1600970912282" />
+    <state x="433" y="206" width="670" height="573" key="search.everywhere.popup/0.23.1440.831/1440.23.1920.1057@0.23.1440.831" timestamp="1601034554077" />
     <state x="433" y="216" width="670" height="605" key="search.everywhere.popup/0.23.1440.877/1440.23.1920.1011@0.23.1440.877" timestamp="1600948251193" />
-    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup/0.23.1680.981@0.23.1680.981" timestamp="1600985579268" />
+    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup/0.23.1680.981@0.23.1680.981" timestamp="1601039266663" />
   </component>
 </project>

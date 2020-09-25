@@ -69,8 +69,8 @@
     method: 'POST',
     headers: this._headers,
     body: JSON.stringify({
-        name: item.title,
-        link: item.url
+        name: item.name,
+        link: item.link
       })
     })
     .then(this._handleResponse)

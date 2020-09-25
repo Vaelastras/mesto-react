@@ -1,7 +1,7 @@
 import React from "react";
 import PopupWithForm from "./PopupWithForm";
 
-function EditAvatarPopup ({isOpen, onClose, onUpdateAvatar}) {
+function EditAvatarPopup ({isOpen, onClose, onUpdateAvatar, isLoading}) {
   const avatarRef = React.useRef('')
 
   function handleSubmit(e) {
@@ -10,7 +10,7 @@ function EditAvatarPopup ({isOpen, onClose, onUpdateAvatar}) {
       avatar: avatarRef.current.value
     })
   }
- // зачистим инпут при повторном открытии
+
   React.useEffect(() => {
     avatarRef.current.value = '';
   }, [isOpen]);
@@ -22,6 +22,7 @@ function EditAvatarPopup ({isOpen, onClose, onUpdateAvatar}) {
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
+      isLoading={isLoading}
       submitTitle="Сохранить">
 
       <fieldset className="popup__inputs">
@@ -37,7 +38,6 @@ function EditAvatarPopup ({isOpen, onClose, onUpdateAvatar}) {
         <span className="popup__error" id="url-input-avatar-error" />
       </fieldset>
     </PopupWithForm>
-
   )
 }
 export default EditAvatarPopup
