@@ -76,13 +76,32 @@
     .then(this._handleResponse)
   }
 
+    // changeLikeCardStatus(id, isLiked) {
+    //   if (isLiked) {
+    //     return (
+    //       fetch(`${this._baseUrl}/cards/likes/${id}`, {
+    //         method: 'PUT',
+    //         headers: this._headers
+    //       })
+    //       .then(this._handleResponse)
+    //     )
+    //   }
+    //   else {
+    //     return fetch(`${this._baseUrl}/cards/likes/${id}`, {
+    //       method: 'PUT',
+    //       headers: this._headers
+    //     })
+    //     .then(this._handleResponse)
+    //   }
+    // }
+
+
   //  постановка лаек
   putLike(id) {
     return fetch(`${this._baseUrl}/cards/likes/${id}`, {
       method: 'PUT',
       headers: this._headers
-      }
-    )
+      })
       .then(this._handleResponse)
   }
 

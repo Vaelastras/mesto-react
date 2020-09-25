@@ -6,12 +6,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b66f6a1-57a8-452b-9816-9fd7642ae050" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/AddPlacePopup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditAvatarPopup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditProfilePopup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/CurrentUserContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__like/_active/element__like_active.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__like/_active/element__like_type_active.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__like/element__like.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__like/element__like.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__trash/element__trash.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__trash/element__trash.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/element.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWIthForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +53,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -43,6 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600073947350</updated>
       <workItem from="1600073948570" duration="720000" />
+      <workItem from="1600946120140" duration="31759000" />
     </task>
     <servers />
   </component>
@@ -134,9 +158,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1659" height="326" key="GridCell.Tab.3.right/0.23.1440.877/1440.23.1920.1011@0.23.1440.877" timestamp="1600258955383" />
-    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup" timestamp="1600246742687">
+    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup" timestamp="1600985579268">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup/0.23.1680.981@0.23.1680.981" timestamp="1600246742687" />
+    <state x="433" y="206" width="670" height="573" key="search.everywhere.popup/0.23.1440.831/1440.23.1920.1057@0.23.1440.831" timestamp="1600970912282" />
+    <state x="433" y="216" width="670" height="605" key="search.everywhere.popup/0.23.1440.877/1440.23.1920.1011@0.23.1440.877" timestamp="1600948251193" />
+    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup/0.23.1680.981@0.23.1680.981" timestamp="1600985579268" />
   </component>
 </project>
