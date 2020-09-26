@@ -16,7 +16,7 @@ function App () {
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
-  const [selectedCard, setSelectedCard] = React.useState('');
+  const [selectedCard, setSelectedCard] = React.useState(false); 
   const [cards, setCards] = React.useState([]);
   const [currentUser, setCurrentUser] = React.useState({})
   const [isLoading, setIsLoading] = React.useState(false)
@@ -29,6 +29,7 @@ function App () {
         setCurrentUser(userData)
         setCards(initialCards)
     })
+    .catch(err => console.log(err));
   }, [])
 
   React.useEffect(()=> {
@@ -59,7 +60,7 @@ function App () {
     setIsEditAvatarPopupOpen(false);
     setIsEditProfilePopupOpen(false);
     setIsAddPlacePopupOpen(false);
-    setSelectedCard('');
+    setSelectedCard(false);
   }
 
   //setstate block
@@ -91,6 +92,7 @@ function App () {
         closeAllPopups()
       }
     )
+    .catch(err => console.log(err));
   }
 
   function handleUpdateAvatar(data) {
@@ -102,6 +104,7 @@ function App () {
         closeAllPopups();
       }
     )
+    .catch(err => console.log(err));
   }
 
   function handleCardLike(card) {
@@ -113,12 +116,15 @@ function App () {
           const newCards = cards.map((c) => c._id === card._id ? newCard : c)
           setCards(newCards)
         })
+        .catch(err => console.log(err));
+
     } else {
       api.deleteLike(card._id)
         .then((newCard) => {
           const newCards = cards.map((c) => c._id === card._id ? newCard : c)
           setCards(newCards)
         })
+        .catch(err => console.log(err));
     }
   }
 
@@ -132,6 +138,7 @@ function App () {
         // Обновляем стейт
         setCards(newCards);
       })
+      .catch(err => console.log(err));
   }
 
   function handleAddPlaceSubmit(item){
@@ -141,6 +148,7 @@ function App () {
         closeAllPopups()
         }
       )
+      .catch(err => console.log(err));
   }
 
 
