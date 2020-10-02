@@ -9,6 +9,7 @@ import AddPlacePopup from "./AddPlacePopup";
 
 import {api} from '../utils/Api'
 import {CurrentUserContext} from '../context/CurrentUserContext'
+import PopupDelete from "./PopupDelete";
 
 function App () {
 
@@ -16,8 +17,10 @@ function App () {
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
+  const [isDeletePopupOpen, setIsDeletePopupOpen] =React.useState(false);
   const [selectedCard, setSelectedCard] = React.useState(false); 
   const [cards, setCards] = React.useState([]);
+  const [cardDelete, setCardDelete] =React.useState([]);
   const [currentUser, setCurrentUser] = React.useState({})
   const [isLoading, setIsLoading] = React.useState(false)
 
@@ -61,6 +64,7 @@ function App () {
     setIsEditAvatarPopupOpen(false);
     setIsEditProfilePopupOpen(false);
     setIsAddPlacePopupOpen(false);
+    setIsDeletePopupOpen(false)
     setSelectedCard(false);
   }
 
@@ -82,6 +86,9 @@ function App () {
     setSelectedCard(card);
   }
 
+  function handleDeleteCardClick() {
+    setIsDeletePopupOpen(true)
+  }
 
  // fetch handlers
   function handleUpdateUser(data) {
@@ -129,17 +136,23 @@ function App () {
     }
   }
 
-  function handleCardDelete(card) {
-    const isOwn = card.owner._id === currentUser._id;
-
-    api.deleteCard(card._id, !isOwn)
+  function handleConfirmCardDelete() {
+    const isOwn = cardDelete.owner._id === currentUser._id;
+    setIsLoading(true)
+    api.deleteCard(cardDelete._id, !isOwn)
       .then((newCard) => {
-        // Формируем новый массив на основе имеющегося, подставляя в него новую карточку
-        const newCards = cards.filter((c) => c._id === card._id ? !newCard : c);
-        // Обновляем стейт
-        setCards(newCards);
+                // Обновляем стейт
+        setCards(cards.filter((c) => c._id === cardDelete._id ? !newCard : c));
+        setIsLoading(false)
+        closeAllPopups()
       })
       .catch(err => console.log(err));
+
+  }
+
+  function handleCardDelete(card) {
+    setCardDelete(card);
+    handleDeleteCardClick();
   }
 
   function handleAddPlaceSubmit(item){
@@ -193,7 +206,13 @@ function App () {
           <ImagePopup
             card={selectedCard}
             isClose={closeAllPopups}
+          />
 
+          <PopupDelete
+            isOpen={isDeletePopupOpen}
+            onClose={closeAllPopups}
+            onSubmit={handleConfirmCardDelete}
+            isLoading={isLoading}
           />
         </div>
       </div>
