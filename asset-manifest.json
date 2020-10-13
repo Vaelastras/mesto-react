@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/mesto-react/static/css/main.4222d211.chunk.css",
-    "main.js": "/mesto-react/static/js/main.72a58e8c.chunk.js",
-    "main.js.map": "/mesto-react/static/js/main.72a58e8c.chunk.js.map",
-    "runtime-main.js": "/mesto-react/static/js/runtime-main.937ca5b9.js",
-    "runtime-main.js.map": "/mesto-react/static/js/runtime-main.937ca5b9.js.map",
-    "static/js/2.602e3a58.chunk.js": "/mesto-react/static/js/2.602e3a58.chunk.js",
-    "static/js/2.602e3a58.chunk.js.map": "/mesto-react/static/js/2.602e3a58.chunk.js.map",
-    "index.html": "/mesto-react/index.html",
-    "precache-manifest.f884621c776eadbac708c8b0ba473083.js": "/mesto-react/precache-manifest.f884621c776eadbac708c8b0ba473083.js",
-    "service-worker.js": "/mesto-react/service-worker.js",
-    "static/css/main.4222d211.chunk.css.map": "/mesto-react/static/css/main.4222d211.chunk.css.map",
-    "static/js/2.602e3a58.chunk.js.LICENSE.txt": "/mesto-react/static/js/2.602e3a58.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/mesto-react/static/media/icon_like_unset.83a46f45.svg",
-    "static/media/logo.svg": "/mesto-react/static/media/logo.c6f11019.svg"
+    "main.css": "/static/css/main.6a68ef69.chunk.css",
+    "main.js": "/static/js/main.72a58e8c.chunk.js",
+    "main.js.map": "/static/js/main.72a58e8c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.66dd7950.js",
+    "runtime-main.js.map": "/static/js/runtime-main.66dd7950.js.map",
+    "static/js/2.602e3a58.chunk.js": "/static/js/2.602e3a58.chunk.js",
+    "static/js/2.602e3a58.chunk.js.map": "/static/js/2.602e3a58.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.25d2bee19d03036376905fb610c9682b.js": "/precache-manifest.25d2bee19d03036376905fb610c9682b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6a68ef69.chunk.css.map": "/static/css/main.6a68ef69.chunk.css.map",
+    "static/js/2.602e3a58.chunk.js.LICENSE.txt": "/static/js/2.602e3a58.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/icon_like_unset.83a46f45.svg",
+    "static/media/logo.svg": "/static/media/logo.c6f11019.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.937ca5b9.js",
+    "static/js/runtime-main.66dd7950.js",
     "static/js/2.602e3a58.chunk.js",
-    "static/css/main.4222d211.chunk.css",
+    "static/css/main.6a68ef69.chunk.css",
     "static/js/main.72a58e8c.chunk.js"
   ]
 }
