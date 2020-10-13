@@ -5,6 +5,8 @@
   object-position: center;
   object-fit: cover;
   display: block;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 .element__photo:hover {
